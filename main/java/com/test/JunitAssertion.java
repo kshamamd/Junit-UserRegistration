@@ -17,4 +17,9 @@ public class JunitAssertion {
         Boolean emailValidation = Pattern.matches("^[A-Z0-9a-z.%+-]+@[A-Za-z0-9.\\-]+\\.[A-Za-z]{2,6}",b);
         return emailValidation;
     }
+
+    public Boolean number(String b) {
+        Boolean numberValidation = Pattern.matches("^[91]+[\\s]+[0-9]{10}",b);
+        return numberValidation;
+    }
 }

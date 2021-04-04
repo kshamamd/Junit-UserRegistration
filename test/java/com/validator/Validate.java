@@ -30,4 +30,12 @@ public class Validate {
         Assertions.assertTrue(ch);
     }
 
+    @Test
+    void Check_Number_WhileCorrect_Return_True() {
+
+        JunitAssertion number = new JunitAssertion();
+        Boolean ch = number.number("91 1234567890");
+        Assertions.assertTrue(ch);
+    }
+
 }

@@ -22,4 +22,9 @@ public class JunitAssertion {
         Boolean numberValidation = Pattern.matches("^[91]+[\\s]+[0-9]{10}",b);
         return numberValidation;
     }
+
+    public Boolean password(String b) {
+        Boolean passwordValidation = Pattern.matches("^(?=.*?[A-Z])(?=.*?[0-9]).{8,}$",b);
+        return passwordValidation;
+    }
 }

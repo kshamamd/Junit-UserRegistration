@@ -32,4 +32,9 @@ public class JunitAssertion {
         Boolean pass2Validation = Pattern.matches("^(?=.*?[A-Z]).{8,}$",b);
         return pass2Validation;
     }
+
+    public Boolean pass3(String b) {
+        Boolean pass3Validation = Pattern.matches("^(?=.*?[A-Z]).{8,}$",b);
+        return pass3Validation;
+    }
 }

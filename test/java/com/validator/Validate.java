@@ -45,4 +45,10 @@ public class Validate {
         Assertions.assertTrue(ch);
     }
 
+    @Test
+    void Check_Pass2_WhileCorrect_Return_True() {
+        JunitAssertion password = new JunitAssertion();
+        Boolean ch = password.password("Kshamamd8");
+        Assertions.assertTrue(ch);
+    }
 }

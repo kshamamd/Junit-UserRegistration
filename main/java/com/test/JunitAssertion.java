@@ -15,30 +15,8 @@ public class JunitAssertion {
 
     public Boolean email(String b) {
         Boolean emailValidation = Pattern.matches("^[A-Z0-9a-z.%+-]+@[A-Za-z0-9.\\-]+\\.[A-Za-z]{2,6}",b);
+        //Boolean emailValidation = Pattern.matches("^[_A-Za-z0-9-\\\\+]+(\\\\.[_A-Za-z0-9-]+)*@\" + \"[A-Za-z0-9-]+(\\\\.[A-Za-z0-9]+)*(\\\\.[A-Za-z]{2,})$",b);
         return emailValidation;
-    }
 
-    public Boolean number(String b) {
-        Boolean numberValidation = Pattern.matches("^[91]+[\\s]+[0-9]{10}",b);
-        return numberValidation;
-    }
-
-    public Boolean password(String b) {
-        Boolean passwordValidation = Pattern.matches("^(?=.*?[A-Z])(?=.*?[0-9]).{8,}$",b);
-        return passwordValidation;
-    }
-
-    public Boolean pass2(String b) {
-        Boolean pass2Validation = Pattern.matches("^(?=.*?[A-Z]).{8,}$",b);
-        return pass2Validation;
-    }
-
-    public Boolean pass3(String b) {
-        Boolean pass3Validation = Pattern.matches("^(?=.*?[A-Z]).{8,}$",b);
-        return pass3Validation;
-    }
-    public Boolean pass4(String b) {
-        Boolean pass4Validation = Pattern.matches("[A-Za-z0-9]*[^A-Za-z0-9]{1}[A-Za-z0-9]*",b);
-        return pass4Validation;
     }
 }

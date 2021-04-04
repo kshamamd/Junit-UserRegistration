@@ -24,44 +24,16 @@ public class Validate {
     }
     @Test
     void Check_Email_WhileCorrect_Return_True() {
-
         JunitAssertion email = new JunitAssertion();
-        Boolean ch = email.email("Kshama@gmail.com");
+        Boolean ch = email.email("shama@gmail.com");
         Assertions.assertTrue(ch);
-    }
-
-    @Test
-    void Check_Number_WhileCorrect_Return_True() {
-
-        JunitAssertion number = new JunitAssertion();
-        Boolean ch = number.number("91 1234567890");
-        Assertions.assertTrue(ch);
-    }
-
-    @Test
-    void Check_Pass1_WhileCorrect_Return_True() {
-        JunitAssertion password = new JunitAssertion();
-        Boolean ch = password.password("Kshamamd8");
-        Assertions.assertTrue(ch);
-    }
-
-    @Test
-    void Check_Pass2_WhileCorrect_Return_True() {
-        JunitAssertion password = new JunitAssertion();
-        Boolean ch = password.pass2("Kshamamd8");
-        Assertions.assertTrue(ch);
+        System.out.println(true);
     }
     @Test
-    void Check_Pass3_WhileCorrect_Return_True() {
-        JunitAssertion password = new JunitAssertion();
-        Boolean ch = password.pass3("Kshamamd8");
-        Assertions.assertTrue(ch);
+    public void givenEmailIsValidShouldReturnTrue() {
+        JunitAssertion email = new JunitAssertion();
+        boolean result = email.email("abc-100@gmail.com.au"); //accepts all the sample emails
+        Assertions.assertTrue(result);
     }
 
-    @Test
-    void Check_Pass4_WhileCorrect_Return_True() {
-        JunitAssertion password = new JunitAssertion();
-        Boolean ch = password.pass4("Kshamamd@8");
-        Assertions.assertTrue(ch);
-    }
 }

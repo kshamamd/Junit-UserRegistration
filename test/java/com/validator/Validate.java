@@ -57,4 +57,11 @@ public class Validate {
         Boolean ch = password.pass3("Kshamamd8");
         Assertions.assertTrue(ch);
     }
+
+    @Test
+    void Check_Pass4_WhileCorrect_Return_True() {
+        JunitAssertion password = new JunitAssertion();
+        Boolean ch = password.pass4("Kshamamd@8");
+        Assertions.assertTrue(ch);
+    }
 }

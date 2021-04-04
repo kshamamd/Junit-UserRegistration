@@ -37,4 +37,8 @@ public class JunitAssertion {
         Boolean pass3Validation = Pattern.matches("^(?=.*?[A-Z]).{8,}$",b);
         return pass3Validation;
     }
+    public Boolean pass4(String b) {
+        Boolean pass4Validation = Pattern.matches("[A-Za-z0-9]*[^A-Za-z0-9]{1}[A-Za-z0-9]*",b);
+        return pass4Validation;
+    }
 }

@@ -21,23 +21,13 @@ public class Validate {
         Boolean ch = lName.lastName("Deshmukh");
         Assertions.assertEquals(true, ch);
         System.out.println(ch);
+    }
+    @Test
+    void Check_Email_WhileCorrect_Return_True() {
 
-
-
+        JunitAssertion email = new JunitAssertion();
+        Boolean ch = email.email("Kshama@gmail.com");
+        Assertions.assertTrue(ch);
     }
 
 }
-
-  /*  public void firstName() {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter First Name: ");
-        String firstName = sc.next();
-        String regex = "^[A-Z]{1}[a-z]{2,}$";
-        Pattern pattern = Pattern.compile(regex);
-        Matcher matcher = pattern.matcher(firstName);
-        boolean result = matcher.matches();
-        if(result == true)
-            System.out.println("First Name is Valid...");
-        else
-            System.out.println("First Name is not valid...");
-    }*/

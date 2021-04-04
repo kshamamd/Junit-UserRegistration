@@ -12,4 +12,9 @@ public class JunitAssertion {
         Boolean lastNameValidation = Pattern.matches("^[A-Z]{1}[a-z]{2,}$",b);
         return lastNameValidation;
     }
+
+    public Boolean email(String b) {
+        Boolean emailValidation = Pattern.matches("^[A-Z0-9a-z.%+-]+@[A-Za-z0-9.\\-]+\\.[A-Za-z]{2,6}",b);
+        return emailValidation;
+    }
 }
